@@ -12,7 +12,7 @@ const doNotDelete = "[ ♕︎ | QueenBot V2 ]";
 
 module.exports = {
         config: {
-                name: "help7",
+                name: "help",
                 version: "1.21",
                 author: "NTKhang",
                 countDown: 5,
