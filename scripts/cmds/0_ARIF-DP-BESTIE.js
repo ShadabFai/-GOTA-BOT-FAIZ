@@ -20,7 +20,7 @@ module.exports = {
 let img =
 link[Math.floor(Math.random()*link.length)]
 message.send({
-  body: '「┏━━━━━┓\n  आरिफ-बाबू  ✧═══•❁😛❁•═══✧\n┗━━━━━┛\n\n♥️ 」',attachment: await global.utils.getStreamFromURL(img)
+  body: '♥️ 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐀𝐑𝐈𝐅 ♥️',attachment: await global.utils.getStreamFromURL(img)
 })
 }
      }
