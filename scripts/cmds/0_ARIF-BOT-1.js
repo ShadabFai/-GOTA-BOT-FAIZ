@@ -160,7 +160,7 @@ if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
      return api.sendMessage("I LOVE YOU TOO MARI JAN 😘", threadID);
      };
 
-  if (event.body.indexOf("Bot") == 0 || (event.body.toLowerCase() == ("bot") || (event.body.indexOf("BOT") == 0)) {
+  if (event.body.indexOf("Bot") == 0 || (event.body.toLowerCase() == "bot") || (event.body.indexOf("BOT") == 0)) {
     var msg = {
       body: ` ${rand}`
     }
