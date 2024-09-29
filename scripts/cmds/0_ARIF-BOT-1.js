@@ -160,8 +160,15 @@ if ((event.body.toLowerCase() == "hm") || (event.body.toLowerCase() == "hmm")) {
      return api.sendMessage("I LOVE YOU TOO MARI JAN 😘", threadID);
      };
 
-  if (event.body.indexOf("Bot") == 0 || (event.body.toLowerCase() == "bot") || (event.body.indexOf("BOT") == 0)) {
-    var msg = {
+    if (event.body.includes("Bot") == 1 ||
+   (event.body.includes("bot") == 1 ||
+   (event.body.includes("gota") == 1 ||
+   (event.body.includes("Gota") == 1 ||
+   (event.body.includes("BOT") == 1 ||
+   (event.body.includes("GOTA") == 1 ||
+   (event.body.includes("taklu") == 1 ||
+   (event.body.includes("Oye") == 1 ||
+   (event.body.includes("oye") == 1 ))))))))) {
       body: ` ${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
