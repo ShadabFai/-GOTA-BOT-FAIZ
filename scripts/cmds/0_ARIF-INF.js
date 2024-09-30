@@ -1,88 +1,54 @@
-const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
-
 module.exports = {
   config: {
     name: "inf",
-    aliases: ["inf2","MR ARIF"],
-    author: " Mr perfect ", 
-    version: "2.0",
-    cooldowns: 0,
+    version: "1.0",
+    author: "joshua sy & kshitiz",
+    countDown: 0, // Set countDown to 0 to trigger manually
     role: 0,
-    shortDescription: {
-      en: ""
-    },
-    longDescription: {
-      en: "get bot owner info"
-    },
-    category: "owner",
-    guide: {
-      en: "{p}{n}"
-    }
+    shortDescription: "",
+    longDescription: "Get user information based on UID.",
+    category: "inf2",
+    guide: "{pn}getinfo uid"
   },
-  onStart: async function ({ api, event }) {
-      try {
-        const loadingMessage = "𝙇𝙤𝙖𝙙𝙞𝙣𝙜......";
-        await api.sendMessage(loadingMessage, event.threadID);
+  onStart: async function ({ api, event, args }) {
+    try {
+      const axios = require('axios');
+      const fs = require("fs-extra");
+      const request = require("request");
+      const messageBody = event.body; // Get the message body
 
-        const ownerInfo = {
-          name: '🌺  [ 1 ]  𒁍 BOT NAME → BOT BABU
-🌺  [ 2 ]  𒁍 BOT ADMIN → ARIF BABU
-🌺  [ 3 ]  𒁍 BOT  PREFIX → #
-🌺  [ 5 ]  𒁍  BOT RUNNING TIME → 1H
-@ARIF-BABU\n🌺THANKYOU FOR USING ♥️🙂'
+      // Check if the message body contains the command trigger
+      if (messageBody.startsWith('{your_prefix}getinfo')) {
+        const juswa = messageBody.replace('{your_prefix}getinfo', '').trim(); // Extract the UID
+
+        if (!juswa) {
+          return api.sendMessage("Please provide a UID as an argument.", event.threadID);
+        }
+
+        const res = await api.getUserInfo(juswa);
+
+        if (!res || !res.name) {
+          return api.sendMessage("User information not found.", event.threadID);
+        }
+
+        const gender = res.gender == 'male' ? "Male" : res.gender == 'female' ? "Female" : "Not found";
+        const birthday = res.birthday == 'Không Có Dữ Liệu' ? "Not found" : "Not Found";
+        const follow = res.follow == 'Không Có Dữ Liệu' ? "Not found" : "Not Found";
+        const location = res.location.name == 'Không Có Dữ Liệu' ? "Not Found" : "Not Found";
+        const hometown = res.hometown == 'Không Có Dữ Liệu' ? "Not found" : "Not Found";
+
+        const callback = function() {
+          return api.sendMessage({
+            body: `╭•┄┅═══❁🌺❁═══┅┄•╮\n       !!आरिफ-बाबू!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n 🌺  [ 1 ]  𒁍 BOT NAME  → ${res.name}\n🌺  [ 2 ]  𒁍 FACEBOOK URL  → ${res.link}\n🌺  [ 3 ]  𒁍 BIRTHDAY  → ${birthday}\n🌺  [ 4 ]  𒁍 FOLLOWERS  → ${follow}\n🌺  [ 5 ]  𒁍 GENDER  → ${gender}\n🌺  [ 6 ]  𒁍 UID  → ${juswa}\n🌺  [ 7 ]  𒁍 LOCATION  → ${location}\n🌺  [ 4 ]  𒁍 HOMETOWN  → ${hometown}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸   𝐀𝐑𝐈𝐅 𝐁𝐀𝐁𝐔  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`,
+            attachment: fs.createReadStream(__dirname + `/cache/2.jpg`)
+          }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/2.jpg`), event.messageID);
         };
 
-        const videoUrl = 
-["https://i.imgur.com/kSVZkHH.mp4",
-"https://i.imgur.com/Ebj77tA.mp4",
-"https://i.imgur.com/5y3yaQQ.mp4",
-"https://i.imgur.com/kDKmrsw.mp4",
-"https://i.imgur.com/gYGp3WW.mp4",
-"https://i.imgur.com/qqT3YRF.mp4",
- ];
-        const tmpFolderPath = path.join(__dirname, 'tmp');
-
-        if (!fs.existsSync(tmpFolderPath)) {
-          fs.mkdirSync(tmpFolderPath);
-        }
-
-        const videoResponse = await axios.get(videoUrl, { responseType: 'arraybuffer' });
-        const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
-
-        fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
-
-        const response = `
-╭•┄┅═══❁🌺❁═══┅┄•╮
-   आरिफ़-बाबू-!!🖤
-╰•┄┅═══❁🌺❁═══┅┄•╯       
-𝙉𝙖𝙢𝙚♥️:${ownerInfo.name}          
-𝙂𝙚𝙣𝙙𝙚𝙧♥️:${ownerInfo.gender}
-𝙃𝙤𝙗𝙗𝙮♥️:${ownerInfo.hobby}
-𝙍𝙚𝙡𝙚𝙖𝙩𝙞𝙤𝙣𝙨𝙝𝙞𝙥♥️:${ownerInfo.relationship}
-𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠 𝙡𝙞𝙣𝙠♥️:${ownerInfo.facebookLink}
-𝙂𝙤𝙖𝙡𝙨♥️:${ownerInfo.bio} 
-        `;
-
-        await api.sendMessage({
-          body: response,
-          attachment: fs.createReadStream(videoPath)
-        }, event.threadID);
-      } catch (error) {
-        console.error('Error in owner command:', error);
-        api.sendMessage('An error occurred while processing the command.', event.threadID);
+        return request(encodeURI(res.avatar)).pipe(fs.createWriteStream(__dirname + `/cache/2.jpg`)).on("close", callback);
       }
-    },
-    onChat: async function({ api, event }) {
-      try {
-        const lowerCaseBody = event.body.toLowerCase();
-
-        if (lowerCaseBody === "owner" || lowerCaseBody.startsWith("{p}owner")) {
-          await this.onStart({ api, event });
-        }
-      } catch (error) {
-        console.error('Error in onChat function:', error);
-      }
+    } catch (err) {
+      console.log(err);
+      return api.sendMessage(`Error`, event.threadID);
     }
-  };
+  }
+};
