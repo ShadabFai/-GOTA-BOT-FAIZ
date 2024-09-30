@@ -56,11 +56,11 @@ const name = infu[qtv2[i].id].name;
             attachment: fs.createReadStream(__dirname + '/cache/1.png')
           },
           event.threadID,
-          () => fs.unlinkSync(__dirname + '/cache/1.png'),
+          () => fs.unlinkSync(__dirname + '/cache/1.jpg'),
           event.messageID
         );
       return request(encodeURI(`${threadInfo.imageSrc}`))
-        .pipe(fs.createWriteStream(__dirname + '/cache/1.png'))
+        .pipe(fs.createWriteStream(__dirname + '/cache/1.jpg'))
         .on('close', () => callback());
  }
 };
