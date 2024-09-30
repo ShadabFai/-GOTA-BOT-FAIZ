@@ -39,7 +39,7 @@ module.exports = {
 
         const callback = function() {
           return api.sendMessage({
-            body: `╭•┄┅═══❁🌺❁═══┅┄•╮\n       !!आरिफ-बाबू!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n 🌺  [ 1 ]  𒁍 BOT NAME  → ${res.name}\n🌺  [ 2 ]  𒁍 FACEBOOK URL  → ${res.link}\n🌺  [ 3 ]  𒁍 BIRTHDAY  → ${birthday}\n🌺  [ 4 ]  𒁍 FOLLOWERS  → ${follow}\n🌺  [ 5 ]  𒁍 GENDER  → ${gender}\n🌺  [ 6 ]  𒁍 UID  → ${juswa}\n🌺  [ 7 ]  𒁍 LOCATION  → ${location}\n🌺  [ 4 ]  𒁍 HOMETOWN  → ${hometown}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸   𝐀𝐑𝐈𝐅 𝐁𝐀𝐁𝐔  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`,
+            body: `╭•┄┅═══❁🌺❁═══┅┄•╮\n       आरिफ-बाबू!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n 🌺  [ 1 ]  𒁍 BOT NAME  → ${res.name}\n🌺  [ 2 ]  𒁍 FACEBOOK URL  → ${res.link}\n🌺  [ 3 ]  𒁍 BIRTHDAY  → ${birthday}\n🌺  [ 4 ]  𒁍 FOLLOWERS  → ${follow}\n🌺  [ 5 ]  𒁍 GENDER  → ${gender}\n🌺  [ 6 ]  𒁍 UID  → ${juswa}\n🌺  [ 7 ]  𒁍 LOCATION  → ${location}\n🌺  [ 4 ]  𒁍 HOMETOWN  → ${hometown}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸   𝐀𝐑𝐈𝐅 𝐁𝐀𝐁𝐔  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`,
             attachment: fs.createReadStream(__dirname + `/cache/786.png`)
           }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/786.png`), event.messageID);
         };
