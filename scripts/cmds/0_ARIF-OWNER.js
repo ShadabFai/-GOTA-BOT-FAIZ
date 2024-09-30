@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   config: {
     name: "owner",
-    aliases: ["info","MR PERFECT"],
+    aliases: ["inf","MR PERFECT"],
     author: " Mr perfect ", 
     version: "2.0",
     cooldowns: 0,
@@ -27,12 +27,12 @@ module.exports = {
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
-          name: '♥️ 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐀𝐑𝐈𝐅 ♥️',
-          gender: '𝘽𝙤𝙮',
-          hobby: '𝙅𝙪𝙨𝙩 𝙖 𝙃𝙖𝙥𝙥𝙮 𝙡𝙞𝙛𝙚 ',
-          relationship: '𝙎𝙞𝙣𝙜𝙡𝙚 𝙔𝙚𝙩!',
-          facebookLink: ' ',
-          bio: '𝙏𝙤 𝙢𝙖𝙠𝙚 𝙛𝙪𝙣'
+          name: 'ARIF BABU',
+          gender: 'BOY ♥️🙂',
+          hobby: 'HAPPY LIFE',
+          relationship: 'SINGLE LIFE 🥺',
+          facebookLink: '[ +91 9336xxxx36 ]',
+          bio: 'TO MAKE FUN'
         };
 
         const videoUrl = 
@@ -55,15 +55,18 @@ module.exports = {
         fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
         const response = `
-       𝕆𝕨𝕟𝕖𝕣 𝕀𝕟𝕗𝕠𝕣𝕞𝕒𝕥𝕚𝕠𝕟
-««««««««««««««»»»»»»»»»»»»»»  
-☆☆☆☆☆☆(◠‿◠)☆☆☆☆☆☆     
-𝙉𝙖𝙢𝙚♥️:${ownerInfo.name}          
-𝙂𝙚𝙣𝙙𝙚𝙧♥️:${ownerInfo.gender}
-𝙃𝙤𝙗𝙗𝙮♥️:${ownerInfo.hobby}
-𝙍𝙚𝙡𝙚𝙖𝙩𝙞𝙤𝙣𝙨𝙝𝙞𝙥♥️:${ownerInfo.relationship}
-𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠 𝙡𝙞𝙣𝙠♥️:${ownerInfo.facebookLink}
-𝙂𝙤𝙖𝙡𝙨♥️:${ownerInfo.bio} 
+      ╭•┄┅═══❁🌺❁═══┅┄•╮
+                   आरिफ़-बाबू!!🖤
+      ╰•┄┅═══❁🌺❁═══┅┄•╯      
+🌺  [ 1 ]  𒁍 OWNER NAME → ${ownerInfo.name}          
+🌺  [ 2 ]  𒁍 GENDER → ${ownerInfo.gender}
+🌺  [ 3 ]  𒁍 HOBBY → ${ownerInfo.hobby}
+🌺  [ 4 ]  𒁍 RELATIONSHIP → ${ownerInfo.relationship}
+🌺  [ 5 ]  𒁍 OWNER NUMBER →${ownerInfo.facebookLink}
+🌺  [ 6 ]  𒁍 GOALS →$ {ownerInfo.bio}
+         ╭•┄┅═══❁🌺❁═══┅┄•╮
+               🌸   𝐀𝐑𝐈𝐅-𝐁𝐀𝐁𝐔  🌸
+         ╰•┄┅═══❁🌺❁═══┅┄•╯
         `;
 
         await api.sendMessage({
