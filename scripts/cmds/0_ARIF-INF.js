@@ -27,11 +27,11 @@ module.exports = {
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
-          name: '🌺  [ 1 ]  𒁍 BOT NAME   → BOT BABU
-🌺  [ 2 ]  𒁍 BOT ADMIN   → ARIF BABU
-🌺  [ 3 ]  𒁍 BOT  PREFIX   → #
-🌺  [ 5 ]  𒁍  BOT RUNNING TIME  → 1H
-@ARIF-BABU\n🌺THANKYOU FOR USING ${BOT♥️\n\n'
+          name: '🌺  [ 1 ]  𒁍 BOT NAME → BOT BABU
+🌺  [ 2 ]  𒁍 BOT ADMIN → ARIF BABU
+🌺  [ 3 ]  𒁍 BOT  PREFIX → #
+🌺  [ 5 ]  𒁍  BOT RUNNING TIME → 1H
+@ARIF-BABU\n🌺THANKYOU FOR USING ♥️🙂'
         };
 
         const videoUrl = 
@@ -54,7 +54,9 @@ module.exports = {
         fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
         const response = `
-       ┏━━━━━┓\n  आरिफ-बाबू  ✧═══•❁🙊❁•═══✧\n┗━━━━━┛\n\n\n   ❁═════════❃•❃═════════❁\n   ♥️ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡 ♥️\n   ❁═════════❃•❃═════════ ❁\n\n\n     
+╭•┄┅═══❁🌺❁═══┅┄•╮
+   आरिफ़-बाबू-!!🖤
+╰•┄┅═══❁🌺❁═══┅┄•╯       
 𝙉𝙖𝙢𝙚♥️:${ownerInfo.name}          
 𝙂𝙚𝙣𝙙𝙚𝙧♥️:${ownerInfo.gender}
 𝙃𝙤𝙗𝙗𝙮♥️:${ownerInfo.hobby}
