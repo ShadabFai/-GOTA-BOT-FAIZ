@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   config: {
     name: "owner",
-    aliases: ["inf","MR PERFECT"],
+    aliases: ["inf","inf2"],
     author: " Mr perfect ", 
     version: "2.0",
     cooldowns: 0,
@@ -36,12 +36,11 @@ module.exports = {
         };
 
         const videoUrl = 
-["https://i.imgur.com/kSVZkHH.mp4",
-"https://i.imgur.com/Ebj77tA.mp4",
-"https://i.imgur.com/5y3yaQQ.mp4",
-"https://i.imgur.com/kDKmrsw.mp4",
-"https://i.imgur.com/gYGp3WW.mp4",
-"https://i.imgur.com/qqT3YRF.mp4",
+["https://imgur.com/a/b42TynO.mp4",
+"https://imgur.com/a/0z9I1gp.mp4",
+"https://imgur.com/a/fZb9654.mp4",
+"https://imgur.com/a/mEGnMIT.mp4",
+"https://imgur.com/a/jrDqhby.mp4",
  ];
         const tmpFolderPath = path.join(__dirname, 'tmp');
 
@@ -56,14 +55,13 @@ module.exports = {
 
         const response = `
       ╭•┄┅═══❁🌺❁═══┅┄•╮
-        आरिफ़-बाबू!!🖤
-      ╰•┄┅═══❁🌺❁═══┅┄•╯      
+       आरिफ़-बाबू!!🖤
+      ╰•┄┅═══❁🌺  ❁═══┅┄•╯      
 🌺  [ 1 ]  𒁍 OWNER NAME → ${ownerInfo.name}          
 🌺  [ 2 ]  𒁍 GENDER → ${ownerInfo.gender}
 🌺  [ 3 ]  𒁍 HOBBY → ${ownerInfo.hobby}
 🌺  [ 4 ]  𒁍 RELATIONSHIP → ${ownerInfo.relationship}
 🌺  [ 5 ]  𒁍 OWNER NUMBER →${ownerInfo.facebookLink}
-🌺  [ 6 ]  𒁍 GOALS →$ {ownerInfo.bio}
          ╭•┄┅═══❁🌺❁═══┅┄•╮
           🌸 𝐀𝐑𝐈𝐅-𝐁𝐀𝐁𝐔 🌸
          ╰•┄┅═══❁🌺❁═══┅┄•╯
