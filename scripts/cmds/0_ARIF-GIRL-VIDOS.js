@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     name: "girlvidos",
-    aliases: ["depressed"],
+    aliases: ["girlvideo"],
     version: "1.0",
     author: "kshitiz",
     countDown: 20,
@@ -18,7 +18,7 @@ module.exports = {
     const senderID = event.senderID;
 
     const loadingMessage = await message.reply({
-      body: "𝐑𝐔𝐊𝐎 𝐃𝐄𝐓𝐀 𝐁𝐔 𝐌𝐄𝐋𝐈 𝐉𝐀𝐀𝐍☹️",
+      body: "𝐥𝐨𝐚𝐝𝐢𝐧𝐠... 😈",
     });
 
     const link = [ 
