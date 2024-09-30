@@ -56,7 +56,7 @@ module.exports = {
 
         const response = `
       ╭•┄┅═══❁🌺❁═══┅┄•╮
-                   आरिफ़-बाबू!!🖤
+        आरिफ़-बाबू!!🖤
       ╰•┄┅═══❁🌺❁═══┅┄•╯      
 🌺  [ 1 ]  𒁍 OWNER NAME → ${ownerInfo.name}          
 🌺  [ 2 ]  𒁍 GENDER → ${ownerInfo.gender}
@@ -65,7 +65,7 @@ module.exports = {
 🌺  [ 5 ]  𒁍 OWNER NUMBER →${ownerInfo.facebookLink}
 🌺  [ 6 ]  𒁍 GOALS →$ {ownerInfo.bio}
          ╭•┄┅═══❁🌺❁═══┅┄•╮
-               🌸   𝐀𝐑𝐈𝐅-𝐁𝐀𝐁𝐔  🌸
+          🌸 𝐀𝐑𝐈𝐅-𝐁𝐀𝐁𝐔 🌸
          ╰•┄┅═══❁🌺❁═══┅┄•╯
         `;
 
