@@ -12,7 +12,7 @@ module.exports = {
 
  onStart: async function(){}, 
  onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "love you") {
+ if (event.body && event.body.toLowerCase() === "love you","LOVE YOU","Love you","love","Love") {
  return message.reply({
  body: "𝑰 𝑳𝑶𝑽𝑬 𝒀𝑶𝑼 𝑻𝑶𝑶 𝑴𝑬𝑹𝑰 𝑱𝑨𝑨𝑵 🙈",
  attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/x8hKfDBn/LOVE-YOU.gif")
