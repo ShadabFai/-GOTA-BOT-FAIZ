@@ -65,7 +65,7 @@ module.exports = {
                                 body: "",
                         };
                         api.sendMessage(msg, threadID, messageID);
-                        api.setMessageReaction("🥵", event.messageID, (err) => {}, true);
+                        api.setMessageReaction("♥️", event.messageID, (err) => {}, true);
                 }
         },
 };
