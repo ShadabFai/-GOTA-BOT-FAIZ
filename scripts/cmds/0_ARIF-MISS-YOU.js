@@ -1,6 +1,6 @@
 module.exports = {
  config: {
-   name: "miss you",
+   name: "love you",
    version: "1.0",
    author: "MR.AYAN",
    countDown: 5,
@@ -12,13 +12,10 @@ module.exports = {
 
  onStart: async function(){}, 
  onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "miss you") ||
-event.body.toLowerCase() === "MISS YOU") ||
-event.body.toLowerCase() === "MISS") ||
-event.body.toLowerCase() === "Miss") ||event.body.toLowerCase() === "miss") {
+ if (event.body && event.body.toLowerCase() === "love you") {
  return message.reply({
- body: "𝐈 𝐌𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎 𝐌𝐀𝐑𝐈 𝐉𝐀𝐀𝐍 😇",
-attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/4yjb0dqG/6341768ed4023a1d6dae3c8a8ed60aea.gif")
+ body: "𝐋𝐨𝐯𝐞 𝐲𝐨𝐮 𝐬𝐡𝐚𝐤𝐢 𝐀𝐘𝐀𝐍<3😇",
+ attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/T2mCqNpH/marin-kitagawa-anime-girl.gif")
  });
  }
  }
