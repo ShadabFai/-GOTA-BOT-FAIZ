@@ -15,7 +15,7 @@ module.exports = {
  if (event.body && event.body.toLowerCase() === "love you") {
  return message.reply({
  body: "𝑰 𝑳𝑶𝑽𝑬 𝒀𝑶𝑼 𝑻𝑶𝑶 𝑴𝑬𝑹𝑰 𝑱𝑨𝑨𝑵 🙈",
- attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/T2mCqNpH/marin-kitagawa-anime-girl.gif")
+ attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/x8hKfDBn/LOVE-YOU.gif")
  });
  }
  }
