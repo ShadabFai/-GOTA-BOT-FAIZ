@@ -29,7 +29,7 @@ module.exports = {
                         welcomeMessage: "╭•┄┅═══❁🌺❁═══┅┄•╮\n   आरिफ़-बाबू-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n\nMY PREFIX 𒁍【 # 】\n════════════════════════ ❁\n\nTHANKYOU FOR USING MR ARIF BABU BOT ♥️🙂",
                         multiple1: "you",
                         multiple2: "you guys",
-                        defaultWelcomeMessage: `╭•┄┅═══❁🌺❁═══┅┄•╮\n   आरिफ़-बाबू-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n\n  ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n      ❥𝐍𝐄𝐖~\n\n     ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n     𒁍 {userName}.𒁍✿\n\nMEMBER TO 𒁍 {soThanhVien}th\nGROUP NAME 𒁍 {threadName}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸  ARIF-BABU  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`
+                        defaultWelcomeMessage: `╭•┄┅═══❁🌺❁═══┅┄•╮\n   आरिफ़-बाबू-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n\n  ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n      ❥𝐍𝐄𝐖~\n\n     ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n     𒁍 {userName} 𒁍✿\n\nMEMBER TO 𒁍 ${threadMem}\nGROUP NAME 𒁍 {threadName}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸  ARIF-BABU  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`
                 }
         },
 
