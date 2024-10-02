@@ -1,6 +1,6 @@
 module.exports = {
  config: {
-   name: "kiss you",
+   name: "kiss",
    version: "1.0",
    author: "MR.ARIF",
    countDown: 5,
@@ -12,10 +12,11 @@ module.exports = {
 
  onStart: async function(){}, 
  onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "kiss you") {
+ if (event.body && event.body.toLowerCase() === "kiss") {
  return message.reply({
  body: "𝑰 𝑲𝑰𝑺𝑺 𝒀𝑶𝑼 𝑻𝑶𝑶 𝑩𝑨𝑩𝒀 💋🙊💞",
  attachment: await global.utils.getStreamFromURL("https://i.postimg.cc/65GftY6h/KISS-YOU.gif")
  });
  }
  }
+}
