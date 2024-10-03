@@ -26,10 +26,10 @@ module.exports = {
                         session2: "noon",
                         session3: "afternoon",
                         session4: "evening",
-                        welcomeMessage: "╭•┄┅═══❁🌺❁═══┅┄•╮\n   आरिफ़-बाबू-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n\nMY PREFIX 𒁍【 # 】\n════════════════════════ ❁\n\nTHANKYOU FOR USING MR ARIF BABU BOT ♥️🙂",
+                        welcomeMessage: "╭•┄┅═══❁🌺❁═══┅┄•╮\n   फैज-अंसारी-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n\nMY PREFIX 𒁍【 # 】\n════════════════════════ ❁\n\nTHANKYOU FOR USING MR FAIZ ANSARI BOT ♥️🙂",
                         multiple1: "you",
                         multiple2: "you guys",
-                        defaultWelcomeMessage: `╭•┄┅═══❁🌺❁═══┅┄•╮\n   आरिफ़-बाबू-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n  ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n      ❥𝐍𝐄𝐖~\n     ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n[ 1 ]  𒁍 NAME 𒁍 {userName} 𒁍\n[ 2 ]  𒁍 GROUP NAME 𒁍 {threadName}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸  ARIF-BABU  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`
+                        defaultWelcomeMessage: `╭•┄┅═══❁🌺❁═══┅┄•╮\n   आरिफ़-बाबू-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n  ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n      ❥𝐍𝐄𝐖~\n     ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n[ 1 ]  𒁍 NAME 𒁍 {userName} 𒁍\n[ 2 ]  𒁍 GROUP NAME 𒁍 {threadName}\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸  𝐅𝐀𝐈𝐙-𝐀𝐍𝐒𝐀𝐑𝐈  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯`
                 }
         },
 
