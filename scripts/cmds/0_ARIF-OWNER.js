@@ -27,11 +27,11 @@ module.exports = {
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
-          name: 'ARIF BABU',
+          name: '𝙁𝘼𝙄𝙕 𝘼𝙉𝙎𝘼𝙍𝙄',
           gender: 'BOY ♥️🙂',
           hobby: 'HAPPY LIFE',
           relationship: 'SINGLE LIFE 🥺',
-          facebookLink: '[ +91 9336xxxx36 ]',
+          facebookLink: '[ ++91 7878128037 ]',
           bio: 'TO MAKE FUN'
         };
 
@@ -56,7 +56,7 @@ module.exports = {
 
         const response = `
       ╭•┄┅═══❁🌺❁═══┅┄•╮
-       आरिफ़-बाबू!!🖤
+       फैज-अंसारी!!🖤
       ╰•┄┅═══❁🌺 ❁═══┅┄•╯      
 🌺  [ 1 ]  𒁍 OWNER NAME → ${ownerInfo.name}          
 🌺  [ 2 ]  𒁍 GENDER → ${ownerInfo.gender}
@@ -64,7 +64,7 @@ module.exports = {
 🌺  [ 4 ]  𒁍 RELATIONSHIP → ${ownerInfo.relationship}
 🌺  [ 5 ]  𒁍 OWNER NUMBER →${ownerInfo.facebookLink}
          ╭•┄┅═══❁🌺❁═══┅┄•╮
-         🌸 𝐀𝐑𝐈𝐅-𝐁𝐀𝐁𝐔 🌸
+         🌸 𝙁𝘼𝙄𝙕-𝘼𝙉𝙎𝘼𝙍𝙄 🌸
          ╰•┄┅═══❁🌺❁═══┅┄•╯
         `;
 
