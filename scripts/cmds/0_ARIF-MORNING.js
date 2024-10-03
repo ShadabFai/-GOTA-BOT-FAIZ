@@ -11,7 +11,7 @@ module.exports = {
   config: {
     name: "good morning",
     version: "1.0",
-    author: "SHANKAR SUMAN",
+    author: "FAIZ ANSARI",
     countDown: 5,
     role: 0,
     shortDescription: "no-prefix",
