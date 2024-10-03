@@ -72,7 +72,7 @@ module.exports = {
 
     if (senderID !== null) {
       message.reply({
-        body: '♥️ 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐀𝐑𝐈𝐅 ♥️',
+        body: '♥️ 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐅𝐀𝐈𝐙 ♥️',
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
